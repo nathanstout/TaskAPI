@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from 'dotenv';
 
-import taskRoutes from './routes/tasks.js';
+import usersRoutes from './routes/users.js';
 
 const app = express();
 dotenv.config();
@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors());
 
-app.use('/tasks', taskRoutes);
+app.use('/users', usersRoutes);
 
 const PORT = process.env.PORT || 5000;
 
