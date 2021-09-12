@@ -2,5 +2,6 @@
 API using express, node, mongoDB
 
 To run on your own machine:
-- Create your own .env file (using the template)
-- Navigate inside server directory and use "npm start"
+- Use the example to create your own .env file
+- Run "npm start" inside the server directory
+- Sever will run on http://localhost:5000
